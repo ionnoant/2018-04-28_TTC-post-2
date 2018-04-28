@@ -1,5 +1,5 @@
 ---
-title: "Revisiting Toronto Transit Commission Data"
+title: "Revisiting Toronto Transit Commission Delay Data"
 subtitle: ""
 author: "Anthony Ionno"
 date: "April 28, 2018"
