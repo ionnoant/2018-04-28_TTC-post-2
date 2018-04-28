@@ -1,0 +1,17 @@
+base
+rpart
+lattice
+RevoScaleR
+mrsdeploy
+MicrosoftML
+RevoMods
+RevoUtils
+RevoUtilsMath
+dplyr
+magrittr
+ggplot2
+readxl
+readr
+extrafont
+stringr
+bindrcpp
