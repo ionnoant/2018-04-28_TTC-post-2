@@ -1,5 +1,5 @@
 ---
-title: "Revisiting Toronto Transit Commission Data"
+title: "Revisiting Toronto Transit Commission Delay Data"
 subtitle: ""
 author: "Anthony Ionno"
 date: "April 28, 2018"
@@ -113,6 +113,8 @@ theme_ai <- function(){
       axis.text = element_text(size=13),
       axis.title.x = element_text(size=15),
       axis.title.y = element_text(size=15),
+      legend.title = element_text(size=15),
+      legend.text = element_text(size=15),
       plot.caption = element_text(color = "gray30", size=12),
       plot.background = element_rect(fill = "gray95"),
       plot.margin = unit(c(5, 10, 5, 10), units = "mm"),
@@ -180,7 +182,9 @@ bus.df %>%
   ggplot()+
   geom_density(aes(x=`Min Delay`,fill=Year),alpha=.3,colour="black")+
   theme_ai()+
-  theme(legend.position = "top")+
+  theme(legend.position = "top",
+         legend.title = element_text(size=13),
+        legend.text = element_text(size=13))+
   labs(title="98% of delays are under one hour;\n93% are under 30 minutes;\n71% are under 15 minutes.",
        subtitle="TTC transit data for 2014 through 2016",
        x="Schedule Delay in Minutes",
@@ -200,7 +204,7 @@ streetcar.df %>%
   geom_col(aes(x=reorder(Incident,n),y=I((n/sum(n)))*100),position="dodge",colour="black",fill="gray45")+
   geom_text(aes(x=reorder(Incident,n),y=I((n/sum(n))*100),label=round((n/sum(n))*100,1),hjust=+1.2),colour="black")+
   theme_ai()+
-  labs(title="Over half of reported subway incidents are due to\nmechanical failures",
+  labs(title="Over half of reported streetcar incidents are due to\nmechanical failures",
        subtitle="TTC transit data for 2015 through 2016",
        x="",
        y="Percent of Total",
@@ -235,7 +239,9 @@ streetcar.df %>%
   ggplot()+
   geom_density(aes(x=`Min Delay`,fill=Year),alpha=.3,colour="black")+
   theme_ai()+
-  theme(legend.position = "top")+
+  theme(legend.position = "top",
+        legend.title = element_text(size=13),
+        legend.text = element_text(size=13))+
   labs(title="97.5% of delays are under one hour;\n91.5% are under 30 minutes;\n78.1% are under 15 minutes.",
        subtitle="TTC transit data for 2015 through 2016",
        x="Schedule Delay in Minutes",
@@ -291,7 +297,9 @@ subway.df %>%
   ggplot()+
   geom_density(aes(x=`Min Delay`,fill=Year),alpha=.3,colour="black")+
   theme_ai()+
-  theme(legend.position = "top")+
+  theme(legend.position = "top",
+         legend.title = element_text(size=13),
+        legend.text = element_text(size=13))+
   labs(title="98.1% of delays are under 15 minutes;\n95.8% are under 10 minutes;\n85.4% are under 5 minutes.",
        subtitle="TTC transit data for 2014 through 2016",
        x="Schedule Delay in Minutes",
