@@ -25,7 +25,7 @@ What this analysis identifies is the following:
  
 
 ## Analysis
-As mentioned previously this analysis investigates bus, streetcar, and subway delay data through the use of three data visualisations: a bar chart that displays the top incident types for a particular transit type, ranked by ocurrence as a percent of total; a histogram that displays the incident count within an hour; and a series of density functions that display the likelihood that a delay is between a particular range of duration times.   
+As mentioned previously this analysis investigates bus, streetcar, and subway delay data through the use of three data visualisations: a bar chart that displays the top incident types for a particular transit type, ranked by percent of total incident occurence; a histogram that displays the percentage of total incident count within a given hour; and a series of empricial probability density functions that display the likelihood that a delay is between a particular range of duration times.   
 
 ### Data
 
