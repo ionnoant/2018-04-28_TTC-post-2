@@ -15,9 +15,11 @@ output:
 
 
 ## Summary
-This post analyses Toronto Transit Commission (TTC) bus, streetcar, and subway delay data to better understand, based on pre-defined incident types, which incidents are occurring most frequently, when are they occurring throughout the day, and for how long typically, this is done through the presentation of a triplet of data visualisations for each transit type.
 
-What this analysis identifies is the following:
+This post utilizes Toronto Transit Commission (TTC) delay data to identify: the most prevalent incident types by method of transit (i.e., bus, streetcar, or subway), when incidents are most likely to occur in a given day; and for how long.  This is done through the presentation of a triplet of data visualizations for each transit type.
+
+
+This analysis identifies the following:
 
 * Delays for buses and streetcars are typically due to mechanical issues; a much higher proportion of incidents and therefore delays typically occur around 5:00 am and 2:00 pm; over 93% of delays last about 30 minutes.
 
@@ -25,13 +27,13 @@ What this analysis identifies is the following:
  
 
 ## Analysis
-As mentioned previously this analysis investigates bus, streetcar, and subway delay data through the use of three data visualisations: a bar chart that displays the top incident types for a particular transit type, ranked by percent of total incident occurence; a histogram that displays the percentage of total incident count within a given hour; and a series of empricial probability density functions that display the likelihood that a delay is between a particular range of duration times.   
+As mentioned previously this analysis investigates bus, streetcar, and subway delay data through the use of three data visualizations: a bar chart that displays the top incident types for a particular transit type, ranked by percent of total incident occurrence; a histogram that displays the percentage of total incident count within a given hour; and a series of empirical probability density functions that display the likelihood that a delay is between a particular range of duration times.   
 
 ### Data
 
 The raw data used to conduct this analysis can be located on the City of Toronto's open data website and contains bus, streetcar, and subway delay information anywhere from 2014 through 2017.
 
-For any of the three datasets, each row pertains to a particular delay and contains the following information:
+For any of the three datasets a row refers to a single incident that caused a delay and contains the following information:
 
 * Report date
 * Trip route
@@ -44,7 +46,7 @@ For any of the three datasets, each row pertains to a particular delay and conta
 * The direction the vehicle was travelling
 * Vehicle number
 
-More information on these datasets can be located at the following links: 
+More information on the datasets used in this analysis can be located at the following links: 
 [TTC Bus Delay Data](https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#bb967f18-8d90-defc-2946-db3543648bd6), [TTC Streetcar Delay Data](https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#e8f359f0-2f47-3058-bf64-6ec488de52da), and
  [TTC Subway Delay Data](https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#917dd033-1fe5-4ba8-04ca-f683eec89761).
 
