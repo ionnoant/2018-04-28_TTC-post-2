@@ -173,8 +173,8 @@ $(document).ready(function () {
 
 <div id="summary" class="section level2">
 <h2>Summary</h2>
-<p>This post analyses Toronto Transit Commission (TTC) bus, streetcar, and subway delay data to better understand, based on pre-defined incident types, which incidents are occurring most frequently, when are they occurring throughout the day, and for how long typically, this is done through the presentation of a triplet of data visualisations for each transit type.</p>
-<p>What this analysis identifies is the following:</p>
+<p>This post utilizes Toronto Transit Commission (TTC) delay data to identify: the most prevalent incident types by method of transit (i.e., bus, streetcar, or subway), when incidents are most likely to occur in a given day; and for how long. This is done through the presentation of a triplet of data visualizations for each transit type.</p>
+<p>This analysis identifies the following:</p>
 <ul>
 <li><p>Delays for buses and streetcars are typically due to mechanical issues; a much higher proportion of incidents and therefore delays typically occur around 5:00 am and 2:00 pm; over 93% of delays last about 30 minutes.</p></li>
 <li><p>Subways have a larger variety of incident types to choose from but the most frequent incident types that lead to delays are due to issues around speed control and operator over-speeding. Neither the dataset nor the metadata provided identify what is meant by speed control as an incident type. Subway delays more frequently occur around 7:00 am and 4:00 pm. Subway delays are far shorter than either bus or streetcar delays; roughly 98% of subway delays are under 15 minutes.</p></li>
@@ -182,11 +182,11 @@ $(document).ready(function () {
 </div>
 <div id="analysis" class="section level2">
 <h2>Analysis</h2>
-<p>As mentioned previously this analysis investigates bus, streetcar, and subway delay data through the use of three data visualisations: a bar chart that displays the top incident types for a particular transit type, ranked by percent of total incident occurence; a histogram that displays the percentage of total incident count within a given hour; and a series of empricial probability density functions that display the likelihood that a delay is between a particular range of duration times.</p>
+<p>As mentioned previously this analysis investigates bus, streetcar, and subway delay data through the use of three data visualizations: a bar chart that displays the top incident types for a particular transit type, ranked by percent of total incident occurrence; a histogram that displays the percentage of total incident count within a given hour; and a series of empirical probability density functions that display the likelihood that a delay is between a particular range of duration times.</p>
 <div id="data" class="section level3">
 <h3>Data</h3>
 <p>The raw data used to conduct this analysis can be located on the City of Toronto’s open data website and contains bus, streetcar, and subway delay information anywhere from 2014 through 2017.</p>
-<p>For any of the three datasets, each row pertains to a particular delay and contains the following information:</p>
+<p>For any of the three datasets a row refers to a single incident that caused a delay and contains the following information:</p>
 <ul>
 <li>Report date</li>
 <li>Trip route</li>
@@ -199,7 +199,7 @@ $(document).ready(function () {
 <li>The direction the vehicle was travelling</li>
 <li>Vehicle number</li>
 </ul>
-<p>More information on these datasets can be located at the following links: <a href="https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#bb967f18-8d90-defc-2946-db3543648bd6">TTC Bus Delay Data</a>, <a href="https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#e8f359f0-2f47-3058-bf64-6ec488de52da">TTC Streetcar Delay Data</a>, and <a href="https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#917dd033-1fe5-4ba8-04ca-f683eec89761">TTC Subway Delay Data</a>.</p>
+<p>More information on the datasets used in this analysis can be located at the following links: <a href="https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#bb967f18-8d90-defc-2946-db3543648bd6">TTC Bus Delay Data</a>, <a href="https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#e8f359f0-2f47-3058-bf64-6ec488de52da">TTC Streetcar Delay Data</a>, and <a href="https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#917dd033-1fe5-4ba8-04ca-f683eec89761">TTC Subway Delay Data</a>.</p>
 </div>
 <div id="r-libraries" class="section level3">
 <h3>R libraries</h3>
